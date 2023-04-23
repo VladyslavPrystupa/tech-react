@@ -1,7 +1,7 @@
 import { Container } from 'components/Container/Container';
 import { WellcomeDescription } from 'components/Wellcome/WellcomeDescription';
 
-const Home = () => {
+export const Home = () => {
   return (
     <>
       <Container>
@@ -11,4 +11,3 @@ const Home = () => {
   );
 };
 
-export default Home;

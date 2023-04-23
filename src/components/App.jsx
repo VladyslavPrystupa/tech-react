@@ -1,19 +1,16 @@
 import { Navigate, Route, Routes } from 'react-router-dom';
-import { lazy } from 'react';
 import { SharedLayout } from './SharedLayout/SharedLayout';
 import { GlobalStyles } from './GlobalStyles';
-
-const Home = lazy(() => import('../pages/HomePage'));
-const Tweets = lazy(() => import('../pages/TweetsPage'));
+import { Home } from 'pages/HomePage';
+import { TweetsPage } from 'pages/TweetsPage';
 
 export const App = () => {
   return (
     <>
+      <SharedLayout />
       <Routes>
-        <Route path="/" element={<SharedLayout />}>
-          <Route index element={<Home />} />
-          <Route path="/tweets" element={<Tweets />} />
-        </Route>
+        <Route path="/" element={<Home />} />
+        <Route path="/tweets" element={<TweetsPage />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
       <GlobalStyles />

@@ -10,7 +10,7 @@ export const WellcomeDescription = () => {
         height={500}
         src={WellcomeImg}
         loading="lazy"
-        alt="wellcome image"
+        alt="stars"
       />
     </Box>
   );

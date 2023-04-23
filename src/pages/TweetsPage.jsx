@@ -8,7 +8,7 @@ import { fetchUsers } from 'services/api';
 import { ALL_USERS, TOTAL_PAGES } from 'services/utils';
 import { ButtonGoBack } from 'components/ButtonGoBack/ButtonGoBack';
 
-const TweetsPage = () => {
+export const TweetsPage = () => {
   const [users, setUsers] = useState([]);
   const [page, setPage] = useState(1);
   const [showBtn, setShowBtn] = useState(false);
@@ -59,5 +59,3 @@ const TweetsPage = () => {
     </Container>
   );
 };
-
-export default TweetsPage;
