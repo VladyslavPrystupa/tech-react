@@ -14,11 +14,11 @@ export const UserCard = styled.li`
   padding-bottom: 36px;
 
   background-image: url(${BackGroundImg}),
-    linear-gradient(114.99deg, #471ca9 -0.99%, #5736a3 54.28%, #4b2a99 78.99%);
+    linear-gradient(115deg, #471ca9 -1%, #5736a3 54%, #4b2a99 79%);
   background-repeat: no-repeat;
   background-position: top 28px center, center;
 
-  box-shadow: -2.5777px 6.87386px 20.6216px rgba(0, 0, 0, 0.23);
+  box-shadow: -2px 6px 20px rgba(0, 0, 0, 0.23);
   border-radius: 20px;
 `;
 
@@ -41,9 +41,8 @@ export const UserAvatarBox = styled.div`
   border-radius: 50%;
   background-color: #ebd8ff;
 
-  box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
-    inset 0px -2.19582px 4.39163px #ae7be3,
-    inset 0px 4.39163px 3.29372px #fbf8ff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), inset 0px -2px 4px #ae7be3,
+    inset 0px 4px 3px #fbf8ff;
 
   &::before {
     content: '';
@@ -52,9 +51,8 @@ export const UserAvatarBox = styled.div`
     width: 150px;
     height: 8px;
     background-color: #ebd8ff;
-    box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
-      inset 0px -2.19582px 4.39163px #ae7be3,
-      inset 0px 4.39163px 3.29372px #fbf8ff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), inset 0px -2px 4px #ae7be3,
+      inset 0px 4px 3px #fbf8ff;
   }
   &::after {
     content: '';
@@ -63,9 +61,8 @@ export const UserAvatarBox = styled.div`
     width: 150px;
     height: 8px;
     background-color: #ebd8ff;
-    box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
-      inset 0px -2.19582px 4.39163px #ae7be3,
-      inset 0px 4.39163px 3.29372px #fbf8ff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.06), inset 0px -2px 4px #ae7be3,
+      inset 0px 4px 3px #fbf8ff;
   }
 `;
 
@@ -102,7 +99,7 @@ export const FollowBtn = styled.button`
 
   background-color: ${({ isFollowing }) =>
     isFollowing ? '#5CD3A8' : '#EBD8FF'};
-  box-shadow: 0px 3.43693px 3.43693px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
   color: #373737;
   text-transform: uppercase;

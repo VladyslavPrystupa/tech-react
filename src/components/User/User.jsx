@@ -42,7 +42,6 @@ export const User = ({ id, user, tweets, followers, avatar }) => {
         <UserAvatar src={avatar} alt="user-avatar" loading="auto" />
       </UserAvatarBox>
       <UserDescriptionBox>
-        {/* <UserDescription>{user}</UserDescription> */}
         <UserDescription>{tweets} tweets </UserDescription>
         <UserDescription>
           {curerntFollowers.toLocaleString('en-US')} followers
