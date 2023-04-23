@@ -43,19 +43,21 @@ export const TweetsPage = () => {
   };
 
   return (
-    <Container>
-      {!isLoading && (
-        <Link to={backLink.current}>
-          <ButtonGoBack />
-        </Link>
-      )}
+    <main>
+      <Container>
+        {!isLoading && (
+          <Link to={backLink.current}>
+            <ButtonGoBack />
+          </Link>
+        )}
 
-      <UsersList users={users} />
-      {isLoading ? (
-        <Loader />
-      ) : (
-        showBtn && <ButtonLoadMore onClick={handleClick} />
-      )}
-    </Container>
+        <UsersList users={users} />
+        {isLoading ? (
+          <Loader />
+        ) : (
+          showBtn && <ButtonLoadMore onClick={handleClick} />
+        )}
+      </Container>
+    </main>
   );
 };
