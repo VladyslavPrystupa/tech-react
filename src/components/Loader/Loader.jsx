@@ -1,16 +1,18 @@
-import { LineWave } from 'react-loader-spinner';
-import { LoaderWrapper } from './Loader.style';
+import { ThreeDots } from 'react-loader-spinner';
+import { LoaderBox } from './Loader.style';
 
 export const Loader = () => {
   return (
-    <LoaderWrapper>
-      <LineWave
-        height="150"
-        width="150"
-        color="#5cd3a8"
-        ariaLabel="line-wave"
+    <LoaderBox>
+      <ThreeDots
+        height="80"
+        width="80"
+        color="#471ca9"
+        radius="10"
+        wrapperStyle={{}}
         visible={true}
+        ariaLabel="three-dots-loading"
       />
-    </LoaderWrapper>
+    </LoaderBox>
   );
 };

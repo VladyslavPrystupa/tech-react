@@ -22,7 +22,7 @@ export const putNewFollowers = async (user, followers) => {
     const { data } = await axios.put(`/${user}`, {
       followers,
     });
-    console.log(followers);
+
     return data;
   } catch (error) {
     console.error(error.message);
