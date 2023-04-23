@@ -7,7 +7,9 @@ import {
   UserDescription,
   UserAvatarBox,
   UserAvatar,
+  LogoIcon,
 } from './User.styled';
+import Logo from '../../images/Logo.png';
 
 export const User = ({ id, user, tweets, followers, avatar }) => {
   const [curerntFollowers, setCurerntFollowers] = useState(followers);
@@ -33,6 +35,9 @@ export const User = ({ id, user, tweets, followers, avatar }) => {
 
   return (
     <UserCard>
+      <a href="https://m.goit.global/ua/new/">
+        <LogoIcon src={Logo} alt="Logo" />
+      </a>
       <UserAvatarBox>
         <UserAvatar src={avatar} alt="user-avatar" loading="auto" />
       </UserAvatarBox>

@@ -2,8 +2,11 @@ import styled from 'styled-components';
 import BackGroundImg from '../../images/BackGround.png';
 
 export const UserCard = styled.li`
+  position: relative;
+
   width: 380px;
   height: 460px;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,17 +22,23 @@ export const UserCard = styled.li`
   border-radius: 20px;
 `;
 
+export const LogoIcon = styled.img`
+  position: absolute;
+  top: 20px;
+  left: 20px;
+`;
+
 export const UserAvatarBox = styled.div`
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+
   margin-top: 178px;
   width: 80px;
   height: 80px;
 
   border-radius: 50%;
-  /* outline: 1px solid red; */
   background-color: #ebd8ff;
 
   box-shadow: 0px 4.39163px 4.39163px rgba(0, 0, 0, 0.06),
@@ -97,4 +106,6 @@ export const FollowBtn = styled.button`
   border-radius: 10px;
   color: #373737;
   text-transform: uppercase;
+
+  transition: background-color 200ms linear;
 `;
