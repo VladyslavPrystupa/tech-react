@@ -5,7 +5,13 @@ export const WellcomeDescription = () => {
   return (
     <Box>
       <Header>Wellcome to the app!</Header>
-      <img width={500} height={500} src={WellcomeImg} alt="" />
+      <img
+        width={500}
+        height={500}
+        src={WellcomeImg}
+        loading="lazy"
+        alt="wellcome image"
+      />
     </Box>
   );
 };
