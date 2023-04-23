@@ -1,21 +1,15 @@
 {
   "files": {
     "main.css": "/tech-react/static/css/main.c3d5249d.css",
-    "main.js": "/tech-react/static/js/main.b5955dca.js",
-    "static/js/525.d38fa437.chunk.js": "/tech-react/static/js/525.d38fa437.chunk.js",
-    "static/js/816.eccf3fd9.chunk.js": "/tech-react/static/js/816.eccf3fd9.chunk.js",
-    "static/js/279.4e3fcaeb.chunk.js": "/tech-react/static/js/279.4e3fcaeb.chunk.js",
+    "main.js": "/tech-react/static/js/main.6cb70487.js",
     "static/media/BackGround.png": "/tech-react/static/media/BackGround.032662a2a907475127d7.png",
     "static/media/welcome.jpg": "/tech-react/static/media/welcome.3a66cef1b80d12a732fd.jpg",
     "index.html": "/tech-react/index.html",
     "main.c3d5249d.css.map": "/tech-react/static/css/main.c3d5249d.css.map",
-    "main.b5955dca.js.map": "/tech-react/static/js/main.b5955dca.js.map",
-    "525.d38fa437.chunk.js.map": "/tech-react/static/js/525.d38fa437.chunk.js.map",
-    "816.eccf3fd9.chunk.js.map": "/tech-react/static/js/816.eccf3fd9.chunk.js.map",
-    "279.4e3fcaeb.chunk.js.map": "/tech-react/static/js/279.4e3fcaeb.chunk.js.map"
+    "main.6cb70487.js.map": "/tech-react/static/js/main.6cb70487.js.map"
   },
   "entrypoints": [
     "static/css/main.c3d5249d.css",
-    "static/js/main.b5955dca.js"
+    "static/js/main.6cb70487.js"
   ]
 }
