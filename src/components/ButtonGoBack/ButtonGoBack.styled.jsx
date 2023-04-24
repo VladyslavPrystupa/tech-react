@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 
 export const GoBack = styled.button`
   font-weight: 600;
@@ -21,6 +22,10 @@ export const GoBack = styled.button`
 
   &:hover,
   &:focus {
-    background-color: #8effd5;
+    background-color: #5cd3a7bf;
   }
+`;
+
+export const StyledLink = styled(Link)`
+  width: 100px;
 `;

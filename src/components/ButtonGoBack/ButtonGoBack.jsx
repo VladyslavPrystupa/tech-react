@@ -1,5 +1,9 @@
-import { GoBack } from './ButtonGoBack.styled';
+import { GoBack, StyledLink } from './ButtonGoBack.styled';
 
-export const ButtonGoBack = () => {
-  return <GoBack>Go Back</GoBack>;
+export const ButtonGoBack = ({ link }) => {
+  return (
+    <StyledLink to={link}>
+      <GoBack>Go back</GoBack>
+    </StyledLink>
+  );
 };

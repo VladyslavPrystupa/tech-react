@@ -4,11 +4,16 @@ import 'modern-normalize';
 export const GlobalStyles = createGlobalStyle`
   body {
   
- font-family: 'Montserrat', sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    font-family: 'Montserrat', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -ms-overflow-style: none; 
+    scrollbar-width: none;  
     line-height: 1.5;
-  
+
+   &::-webkit-scrollbar {
+  display: none;
+}
 }
 
 
@@ -43,5 +48,7 @@ export const GlobalStyles = createGlobalStyle`
     max-width: 100%;
     height: auto;
   }
+
+ 
    
 `;

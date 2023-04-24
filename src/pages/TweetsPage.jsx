@@ -1,5 +1,5 @@
 import { useEffect, useRef, useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useLocation } from 'react-router-dom';
 import { ButtonLoadMore } from 'components/ButtonLoadMore/ButtonLoadMore';
 import { Container } from 'components/Container/Container';
 import { Loader } from 'components/Loader/Loader';
@@ -45,11 +45,7 @@ export const TweetsPage = () => {
   return (
     <main>
       <Container>
-        {!isLoading && (
-          <Link to={backLink.current}>
-            <ButtonGoBack />
-          </Link>
-        )}
+        {!isLoading && <ButtonGoBack link={backLink.current} />}
 
         <UsersList users={users} />
         {isLoading ? (

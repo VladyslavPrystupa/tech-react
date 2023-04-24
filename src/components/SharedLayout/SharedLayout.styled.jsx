@@ -28,7 +28,14 @@ export const Link = styled(NavLink)`
   text-transform: uppercase;
   color: #373737;
 
+  transition: color 150ms linear;
+
   &.active {
+    color: #5cd3a8;
+  }
+
+  &:hover,
+  &:focus {
     color: #5cd3a8;
   }
 `;

@@ -105,4 +105,10 @@ export const FollowBtn = styled.button`
   text-transform: uppercase;
 
   transition: background-color 200ms linear;
+
+  &:hover,
+  &:focus {
+    background-color: ${({ isFollowing }) =>
+      isFollowing ? '#5cd3a7bf' : '#ebd8ffaa'};
+  }
 `;
