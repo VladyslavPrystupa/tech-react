@@ -1,14 +1,14 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
-export const GoBack = styled.button`
+export const StyledLink = styled(Link)`
   font-weight: 600;
   font-size: 14px;
   line-height: 22px;
+  text-align: center;
 
   width: 100px;
   padding: 10px 0;
-
   margin-bottom: 15px;
 
   background-color: #3af2af;
@@ -24,8 +24,4 @@ export const GoBack = styled.button`
   &:focus {
     background-color: #5cd3a7bf;
   }
-`;
-
-export const StyledLink = styled(Link)`
-  width: 100px;
 `;
